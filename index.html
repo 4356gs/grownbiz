@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="resources/">
+        <title>Eres+Mas Centro Terapeutico</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="row">
+                    <img src="/resources/img/logo.png" alt="Eres+Mas Log">
+                    <ul class="main-nav">
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Especialistas</a></li>
+                        <li><a href="#">Contactanos</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                    </ul>
+                </div>
+            </nav>
+           <div class="hero-text-box">
+                <h1>Eres+MAS <br> Centro Psicoterapeutico</h1>
+                <a class="btn btn-full" href="#">Consultanos</a>
+                <a class="btn btn-ghost" href="#">Consultanos</a>
+               
+               
+            </div> 
+        </header>
+        <section class="section-features">
+            <div class="row">
+                <h2>Servicios que Ofrecemos</h2>
+                <p class="long-copy">Ofrecemos un amplio portafolio de servicios en distintas areas de la psicologia clinica y psicologia escolar. Nuestros profesionales estan capacitados para asistir en casos como:</p>
+
+            </div>
+
+            <div class="row">
+                <div class="col span-1-of-3 box">
+                    <i class="ion-clipboard big-icon"></i>
+                    <h3>Psicologia Clinica</h3>
+                    <ul>
+                        <li>Evaluación Psicométrica</li>
+                        <li>Intervención psicoterapéutica</li>
+                        <li>Evaluación psicoeducativa</li>
+                        <li>Intervención en crisis</li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-3 box">
+                    <i class="ion-person big-icon"></i>
+                        <h3>Psicologia Escolar</h3>
+                    <ul>
+                        <li>Terapia de Aprendizaje</li>
+                        <li>Terapia ludica</li>
+                        <li>Evaluación psicoeducativa</li>
+                        <li>Evaluación de Personalidad</li>
+                        <li>Evaluación de Aptitud</li>
+                    </ul>
+                </div>
+
+                <div class="col span-1-of-3 box">
+                    <i class="ion-ios-people-outline big-icon"></i>
+                    <h3>Charlas y Talleres</h3>
+                    <ul>
+                        <li>Terapia Familiar e Individual</li>
+                        <li>Charlas para Empresas</li>
+                        <li>Unidad Formativa para Colegios</li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+        <section class="section-form">
+            <div class="row">
+                <h2>Ponte en contacto con nosotros</h2>
+            </div>
+            <div class="row">
+                <form method="post" action="#" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                        <label form="name">Nombre</label>
+                    </div>
+                        <div class="col span-2-of-3">
+                        <input type="text" name="name" id="name" placeholder="Su nombre" required>
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                        <label form="email">Email</label>
+                    </div>
+                        <div class="col span-2-of-3">
+                        <input type="email" name="email" id="name" placeholder="Su correo electrónico" required>
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                        <label form="find-us">¿Dónde nos encontraste?</label>
+                    </div>
+                        <div class="col span-2-of-3">
+                        <select name="find-us" id="find-us">
+                            <option value="friends" selected>Amigos</option>
+                            <option value="search">Buscador Internet</option>
+                            <option value="Advertisement">Facebook</option>
+                            <option value="Other">Otros</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>¿Cómo podemos ayudarte?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="message" placeholder="Escribe aqui tu mensaje para nosotros"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                        <label>&nbsp;</label>
+                    </div>
+                        <div class="col span-2-of-3">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="section-map">
+            <h3>Nuestra Ubicacion</h3>
+                <div id="map"></div>
+                <script>
+                  function initMap() {
+                    var uluru = {lat: 18.4999683, lng: -69.958494};
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                      zoom: 16,
+                      center: uluru
+                    });
+                    var marker = new google.maps.Marker({
+                      position: uluru,
+                      map: map
+                    });
+                  }
+                </script>
+                <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKKCYUPduf14RJenlgwSP4VMkZlij5-lY&callback=initMap">
+                </script>
+        </section>
+
+        <footer>
+            <div class="row">
+                <div class="col span-1-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">Acerca de </a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-2">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                    </ul>
+            </div>
+            </div>
+            <div class="row">
+                <p>2016 All right reserved. The Wizard Consulting.</p>
+            </div>
+
+        </footer>
+
+
+    </body>
+    
+</html>
+
+<!--    <a href="http://www.freepik.com/free-photos-vectors/background">Background photograph designed by Pressfoto - Freepik.com</a>-->
+
